@@ -1,0 +1,39 @@
+
+.my-masonry-grid {
+    display: flex;
+    margin-left: -16px; 
+    width: auto;
+    justify-content: flex-end;
+    padding-right: 30px;
+      padding-left:30px;
+   
+  }
+   
+  @media(min-width: 1200px) {
+    .my-masonry-grid{
+      padding-right: 100px;
+      padding-left:100px;
+      padding-bottom:40px;
+        padding-top:9%;
+        
+       
+        
+    }
+    
+    
+}
+
+  .my-masonry-grid_column {
+    padding-left: 16px; 
+    background-clip: padding-box;
+  }
+  
+  .gallery-item {
+    margin-bottom: 16px; 
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    display: block;
+  }
+  

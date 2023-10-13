@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Header from "./components/Navbar/Header";
+import Hero from "./components/HeroSection /Hero"; //  Hero component
+import GlobalStyles from './Global Styles';
+import About from "./components/About/About";
+import Founders from './components/Founders/Founders'; 
+import SectionWithCards from './components/SectionWithCards/SectionWithCards';
+import MasonryGallery from './components/MasonryGallery/MasonryGallery';
+import Testimonial  from './components/Testimonial/Testimonial';
+import Footer from  './components/Footer/Footer';
+import { ThemeProvider } from 'styled-components';
+import theme from '/Users/uncommonstudent/Desktop/web dev projects/my-react-app/src/theme.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+    <>
+      <Header />
+      <Hero />
+      <GlobalStyles />
+      <About /> 
+      <Founders />
+      <SectionWithCards/>
+      <MasonryGallery />
+      <Testimonial/>
+      <Footer/>
+    </>
+    </ThemeProvider>
   );
 }
 
